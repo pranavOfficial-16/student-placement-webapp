@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+{% endblock %}
+
+{% block body %}
+<h1>Student Placement</h1>
+<form action = "predict" method = "POST">  
+    <label for="cgpa">Enter cgpa</label><br>  
+    <input type="text" id="cgpa" name="cgpa"><br>  
+    <label for="iq">Enter iq</label><br>  
+    <input type="text" id="iq" name="iq"><br>  
+    <label for="profile_score">Enter Profile score</label><br>  
+    <input type="text" id="profile_score" name="profile_score"><br><br>
+    <input type="submit" value="submit">  
+</form>  
+{% endblock %}
